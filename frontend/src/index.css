@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply w-72 py-1 rounded bg-grey-dark text-white text-center hover:bg-grey-light hover:cursor-pointer 
+  }
+
+  .head-large {
+     @apply text-4xl flex items-center
+  }
+
+  .head-small {
+    @apply mt-3 text-grey-light text-2xl font-bold
+  }
+
+  .header-sec {
+      @apply flex flex-col items-center mt-5
+  }
+
+  .form-sec {
+    @apply flex justify-center mt-5
+  }
+}
+
